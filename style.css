@@ -1,0 +1,263 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial,sans-serif;
+}
+
+body{
+    background:#f9f9f9;
+    color:#333;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 40px 5px 10px;
+    background: rgba(255, 255, 255, 0.85);
+    border-radius: 40px;      
+    margin: 15px auto;       
+    width: 90%;              
+    position: absolute;       
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1000;             
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+}
+
+.navbar {
+    position: fixed;          
+    top: 20px;              
+    left: 50%;               
+    transform: translateX(-50%);
+    width: 90%;             
+    background: rgba(255,255,255,0.85);
+    padding: 15px 30px;
+    border-radius: 60px;      
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+    z-index: 1000;           
+}
+
+nav {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    padding: 10px 30px 15px 15px;
+    background-color: #fff; 
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+
+
+.logo img {
+    height: 60px;       
+    width: auto;
+    display: block;     
+    margin: 0;        
+    padding: 0;  
+    overflow: hidden;      
+}
+
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+}
+
+
+nav ul{
+    list-style:none;
+    display:flex;
+    gap:20px;
+}
+
+nav ul li a{
+    color:#0a0000;
+    text-decoration:none;
+    transition:.3s;
+}
+
+nav ul li a:hover,nav ul li a.active{
+    color:#f30303f8;
+}
+
+.hero{
+    height:100vh;
+    background:url("../sikkim-tourism/assets/images/main-page.jpg") no-repeat center/cover;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    color:white;
+    text-align:center;
+    position:relative;
+    padding-top: 80px;
+}
+
+.hero::after{
+    content:"";
+    position:absolute;
+    inset:0;
+    background:rgba(0,0,0,.5)
+}
+
+.hero-content{
+    position:relative;
+    z-index:1;
+}
+
+.hero h1{font-size:
+    50px;margin-bottom:15px;
+}
+
+.hero p{
+    font-size:20px;
+}
+
+.map-section {
+  padding: 40px 20px;
+  background: #f9f9f9;
+}
+
+.map-content {
+  display: flex;            /* side by side layout */
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 20px;                /* space between text & map */
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.info {
+  flex: 1; 
+  order: 1;              /* take equal space */
+  font-size: 18px;
+  line-height: 1.6;
+  color: #333;
+}
+
+.map-container {
+  flex: 1;   
+  order: 2;               /* equal space as info */
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+
+.about{
+    padding:50px 20px;
+    background:white;
+    text-align:center
+}
+
+.about h2{
+    margin-bottom:20px;
+    font-size:28px
+}
+
+.destinations{
+    margin: 50px;
+    padding:100px 20px
+}
+
+.destinations h2{
+    text-align:center;
+    margin-bottom:30px
+}
+
+.cards{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:20px
+}
+
+.card{
+    background:white;
+    border-radius:10px;
+    overflow:hidden;
+    box-shadow:0 4px 10px rgba(0,0,0,.1);
+    transition:transform .3s
+}
+
+.card:hover{
+    transform:scale(1.05)
+}
+
+.card img{
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 8px;
+}
+
+.card h3{
+    padding:10px;
+    font-size:20px
+}
+
+.card p{
+    padding:0 10px 15px;
+    font-size:16px;
+    color:#555
+}
+
+.form-section{
+    padding:60px 20px;
+    text-align:center
+}
+
+.form-section h2{
+    margin-bottom:20px
+}
+
+form{
+    max-width:400px;
+    margin:auto;
+    display:flex;
+    flex-direction:column;
+    gap:15px
+}
+
+form input,form textarea,form button{
+    padding:12px;
+    border:1px solid #ccc;
+    border-radius:6px;
+    font-size:16px
+}
+
+form textarea{
+    resize:none;height:100px
+}
+
+form button{
+    background:#1abc9c;
+    color:white;
+    border:none;
+    cursor:pointer;
+    transition:.3s
+}
+
+form button:hover{
+    background:#16a085
+}
+
+footer{
+    background:#2c3e50;
+    color:white;
+    text-align:center;
+    padding:15px;
+    margin-top:30px
+}
+
